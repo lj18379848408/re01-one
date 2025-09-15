@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <title>居中显示的内容</title>
+    <style>
+      body {
+        height: 100vh;
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
+        /* 只填写本地图片的文件名（确保图片和HTML文件在同一文件夹） */
+        background-image: url("微信图片_2025-09-06_175846_601.jpg");
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+        background-blend-mode: overlay;
+        background-color: rgba(0, 0, 0, 0.3);
+      }
+
+      h1 {
+        color: white;
+        margin-bottom: 20px;
+        text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+      }
+
+      button {
+        padding: 10px 20px;
+        font-size: 16px;
+        cursor: pointer;
+        background-color: rgba(76, 175, 80, 0.9);
+        color: white;
+        border: none;
+        border-radius: 5px;
+        transition: all 0.3s;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+      }
+
+      button:hover {
+        background-color: rgba(76, 175, 80, 1);
+        transform: translateY(-2px);
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+      }
+    </style>
+  </head>
+  <body>
+    <h1>很高兴你能来到这里</h1>
+    <button onclick="window.location.href='item1.html'">点击我</button>
+  </body>
+</html>
