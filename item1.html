@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>我的第一个网站</title>
+    <style>
+      body {
+        margin: 0;
+        height: 100vh;
+        background-color: black;
+      }
+
+      .flex {
+        display: flex;
+      }
+      .baise {
+        background-color: black;
+      }
+      .flex1 {
+        flex: 1;
+      }
+      .column {
+        flex-direction: column;
+      }
+      .width {
+        width: 120px;
+      }
+      .mg8 {
+        margin: 8px;
+      }
+      .mgr8 {
+        margin-right: 8px;
+      }
+      .mgl8 {
+        margin-left: 8px;
+      }
+      .mgt {
+        margin-top: 8px;
+      }
+      .pd8 {
+        padding: 8px;
+      }
+      /* 新增：文字放大动画样式 */
+      .animate-text {
+        transition: transform 0.3s ease;
+        /* 平滑过渡效果 */
+      }
+      .animate-text:hover {
+        transform: scale(1.1);
+        /* 放大1.1倍 */
+      }
+      a {
+        color: white;
+        text-decoration: none;
+      }
+    </style>
+  </head>
+  <body class="flex column">
+    <!--头目栏-->
+    <div style="height: 80px; justify-content: space-between" class="flex">
+      <!--一区-->
+      <div
+        class="width baise mgl8 mgt8 animate-text"
+        style="font-size: 50px; color: white; text-align: center"
+      >
+        X
+      </div>
+      <!--二区-->
+      <div
+        style="width: 300px; font-size: 50px; color: white; text-align: center"
+        class="baise mgr8 mgt8 animate-text"
+      >
+        Lv Jian
+      </div>
+      <!--三区-->
+      <div
+        style="width: 200px; font-size: 20px; color: white; text-align: end"
+        class="baise mgr8 mgt8 animate-text"
+      >
+        与我联系
+      </div>
+    </div>
+    <!--主区域-->
+    <div class="flex flex1" style="margin-top: 16px">
+      <!--左边栏-->
+      <div style="flex: 3" class="mg8 flex column">
+        <!--内容区-->
+        <div
+          class="baise flex1 pd8 animate-text"
+          style="font-size: 100px; color: white; padding-left: 50px"
+        >
+          <a href="5.html">个人简介</a>
+        </div>
+        <div
+          class="baise flex1 pd8 animate-text"
+          style="font-size: 100px; color: white; padding-left: 50px"
+        >
+          敬请期待
+        </div>
+        <div
+          class="baise flex1 pd8 animate-text"
+          style="font-size: 100px; color: white; padding-left: 50px"
+        >
+          敬请期待
+        </div>
+        <div
+          class="baise flex1 pd8 animate-text"
+          style="font-size: 100px; color: white; padding-left: 50px"
+        >
+          敬请期待
+        </div>
+      </div>
+      <!--右边栏-->
+      <div
+        style="flex: 1; font-size: 15px; color: white"
+        class="baise mg8 animate-text"
+      >
+        <p>Phone:18379848408</p>
+        <p>Weixin:lj18379848408 (来日方长)</p>
+        <p>QQ:3283680003 (Fllowheart)</p>
+        <p>Douyin:61006131377(Sunny317)</p>
+      </div>
+    </div>
+  </body>
+</html>
